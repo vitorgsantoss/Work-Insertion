@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "52118262744",
+    "project_id": "workinsertion-a2b02",
+    "storage_bucket": "workinsertion-a2b02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52118262744:android:73f703a34feb569cf3d8ad",
+        "android_client_info": {
+          "package_name": "com.example.aula_27_03"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrN-IM7KCkg_ZeO1NEFqAn0EqB6yP735g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52118262744:android:58c0fee8f6520707f3d8ad",
+        "android_client_info": {
+          "package_name": "com.example.work_insertion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrN-IM7KCkg_ZeO1NEFqAn0EqB6yP735g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
