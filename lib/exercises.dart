@@ -31,19 +31,22 @@ class _ExercisePageState extends State<ExercisePage> {
         title: Text('Exercícios - Aula 1'),
       ),
       body: SingleChildScrollView(
-        // Use SingleChildScrollView to avoid overflow issues
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'O código presente na imagem abaixo retorna o que para o usuário?',
+              'O que a frase da imagem abaixo representa?',
               style: TextStyle(fontSize: 18),
             ),
             SizedBox(height: 16),
             Center(
-              child: Image.asset(
-                  '/home/vitor/Documentos/tcc/work_insertion/assets/images/img_mkt.jpg'), // Certifique-se de adicionar a imagem correta no diretório assets
+              child: SizedBox(
+                width: 250,
+                height: 250,
+                child: Image.asset(
+                    '/home/vitor/Documentos/tcc/work_insertion/assets/images/img_mkt.jpg'), // Certifique-se de adicionar a imagem correta no diretório assets
+              ),
             ),
             SizedBox(height: 16),
             Center(
@@ -58,7 +61,6 @@ class _ExercisePageState extends State<ExercisePage> {
                       await ServerCommunication.extrairEFalarTexto(imagePath);
                     } catch (e) {
                       print("Erro ao processar imagem: $e");
-                      // Aqui você pode adicionar lógica para lidar com exceções
                     }
                   },
                   child: Text('Ler imagem'),
@@ -72,7 +74,7 @@ class _ExercisePageState extends State<ExercisePage> {
             ),
             RadioListTile<int>(
               title: Text(
-                  'A) Um botão com o texto "Conteúdo dos Exercícios" no centro da tela.'),
+                  'A) A necessidade de investir em campanhas publicitárias agressivas para alcançar o sucesso.'),
               value: 1,
               groupValue: _selectedOption,
               onChanged: (int? value) {
@@ -83,7 +85,7 @@ class _ExercisePageState extends State<ExercisePage> {
             ),
             RadioListTile<int>(
               title: Text(
-                  'B) Um título "Exercícios - Aula 1" no centro da tela e um texto "Conteúdo dos Exercícios" na parte superior.'),
+                  'B) A importância de utilizar celebridades para promover produtos e serviços.'),
               value: 2,
               groupValue: _selectedOption,
               onChanged: (int? value) {
@@ -94,7 +96,7 @@ class _ExercisePageState extends State<ExercisePage> {
             ),
             RadioListTile<int>(
               title: Text(
-                  'C) Uma página com um app bar contendo o título "Exercícios - Aula 1" e um texto "Conteúdo dos Exercícios" centralizado na tela.'),
+                  'C) A eficácia de estratégias de marketing sutis e naturais que não parecem ser marketing.'),
               value: 3,
               groupValue: _selectedOption,
               onChanged: (int? value) {
@@ -105,7 +107,7 @@ class _ExercisePageState extends State<ExercisePage> {
             ),
             RadioListTile<int>(
               title: Text(
-                  'D) Um texto "Conteúdo dos Exercícios" no topo da tela e um botão "Exercícios - Aula 1" no centro da tela.'),
+                  'D) A relevância de seguir as tendências de marketing digital para atrair mais clientes.'),
               value: 4,
               groupValue: _selectedOption,
               onChanged: (int? value) {
