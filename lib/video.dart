@@ -49,11 +49,6 @@ class _VideoAppState extends State<VideoApp> {
     super.dispose();
   }
 
-  void Marketing() {
-    // Implementação do método Marketing()
-    print('Marketing button pressed');
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -150,9 +145,11 @@ class _VideoAppState extends State<VideoApp> {
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => CursoMarketing()));
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => CursoMarketing(),
+                            ),
+                          );
                         },
                         child: Text('Próxima aula'),
                       ),
@@ -163,6 +160,23 @@ class _VideoAppState extends State<VideoApp> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class CursoMarketing extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Próxima Aula'),
+      ),
+      body: Center(
+        child: Text(
+          'Bem-vindo à próxima aula de Marketing!',
+          style: TextStyle(fontSize: 24),
+        ),
       ),
     );
   }
