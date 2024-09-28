@@ -4,7 +4,7 @@ import 'dart:convert';
 
 class ServerCommunication {
   static const String baseUrl = 'http://127.0.0.1:5000';
-  static const String apiEndpoint = '/extrair-falar-texto';
+  static const String apiEndpoint = '/interpretar-falar-texto';
 
   static Future<void> extrairEFalarTexto(String imagePath) async {
     String apiUrl = '$baseUrl$apiEndpoint';
